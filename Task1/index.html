@@ -26,12 +26,12 @@ integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChi
                     <li><a href="#">Service</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
-                <img src="/Task-1/mylogo.jpeg" style="height: 100px; cursor: pointer;" alt="">
+                <img src="/Task-1/mylogo.jpeg" class="logo" alt="">
             </nav> 
         </header>
+        
 
         <div class="main-content">
-
             <div class="image-blur">
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
@@ -80,14 +80,23 @@ integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChi
                 </div>
             </div>
         </div>
-
-        <div class="social-links">
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="far fa-envelope"></i>
-        </div>
     </div>
+
+    <footer>
+        <div class="footer-content">
+            <h3>My Website</h3>
+            <ul class="socials">
+                <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="mailto:someone@example.com"><i class="far fa-envelope"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 My Website. All rights reserved.</p>
+        </div>
+    </footer>
+
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <!-- Initialize Swiper -->
     <script>
@@ -95,8 +104,13 @@ integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChi
           slidesPerView: 1,
           spaceBetween: 30,
           loop: true,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
         });
       </script>
 </body>
 
 </html>
+
